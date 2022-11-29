@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Owl Carousel -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link rel="stylesheet" href="/assets/css/bootstrap-css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div>
+                <h2>Who We Are</h2>
+                <p>
+                  Problems trying to resolve the conflict between the two major
+                  realms of Classical physics: Newtonian mechanics
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="vid__thumbnail position-relative">
+              <video
+                width="597"
+                height="442"
+                controls
+                poster="https://wallpapercave.com/wp/wp5539857.jpg"
+                onclick="lightbox_open();"
+              ></video>
+              <span class="position-absolute vid__thumbnail-playbutton" onclick="lightbox_open();">
+                <svg width="99" height="99" viewBox="0 0 99 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0.5" width="97.6" height="98.4" rx="48.8" fill="#295C7A"/>
+                  <g clip-path="url(#clip0_964_16134)">
+                  <path d="M37.2998 34.7998L61.2998 49.1998L37.2998 63.5998V34.7998Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_964_16134">
+                  <rect width="24" height="28.8" fill="white" transform="translate(37.2998 34.7998)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>                  
+              </span>
+            </div>
+              <div id="light">
+                <a
+                  class="boxclose"
+                  id="boxclose"
+                  onclick="lightbox_close();"
+                ></a>
+                <iframe
+                  src=""
+                  id="VisaChipCardVideo"
+                  width="597"
+                  height="442"
+                  control
+
+                >
+                </iframe>
+              </div>
+
+              <div id="fade" onClick="lightbox_close();"></div>
+            </div>
+            <div class="col-6">
+              <div>
+                <h2>Most trusted in 
+                  our field</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div>
+                <h2>What Clients Say</h2>
+                <p>Problems trying to resolve the conflict between 
+                  the two major realms of Classical physics: Newtonian mechanics </p>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="wrapper">
+                <div class="carousel owl-carousel">
+                  <div class="card card-1">
+                     A
+                  </div>
+                  <div class="card card-2">
+                     B
+                  </div>
+                  <div class="card card-3">
+                     C
+                  </div>
+                  <div class="card card-4">
+                     D
+                  </div>
+                  <div class="card card-5">
+                     E
+                  </div>
+              </div>
+            </div>
+            </div>
+        </div>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="/assets/js/bootstrap-js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script>
+        // alert()
+        $(".owl-carousel").owlCarousel({
+           margin: 20,
+           loop: true,
+          //  autoplay: true,
+          //  autoplayTimeout: 2000,
+           autoplayHoverPause: true,
+           responsive: {
+            0:{
+              stagePadding:100,
+              items:1
+            }
+           }
+         });
+    </script>
+  </body>
+</html>
